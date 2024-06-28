@@ -1,0 +1,62 @@
+
+.app-title{
+    text-align: center;
+    
+}
+
+.todolist-container{
+    margin-top: 15rem;
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+.add-item-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-input{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border:1.5px solid gray;
+    font-size: 18px;
+}
+.add-icon{
+    height: 32px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.categeory-select{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .app-title{
+       margin-left: 250px;
+        width: 250px;
+    }
+    .todolist-container{
+        margin: 0% 20%;
+    }
+  .boy{
+    margin-left:98px;
+    margin-bottom: -52px;
+}
+  .girl{
+    margin-left: 560px;
+}
+.add-item-container{
+    margin-left: 300px;
+}
+}
