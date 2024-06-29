@@ -1,0 +1,111 @@
+.app-title {
+    text-align: center;
+}
+
+.todolist-container {
+    margin-top: 15rem;
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.todolist-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.todolist-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+.todolist-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+.todolist-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.todolist-container {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.todolist-container {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.add-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-input {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1.5px solid gray;
+    font-size: 18px;
+}
+
+.add-icon {
+    height: 32px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.categeory-select {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .todolist-container {
+        width: 80%;
+        margin-top: 5rem;
+    }
+    .add-input {
+        font-size: 16px;
+    }
+    .categeory-select {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .todolist-container {
+        width: 90%;
+        height: 400px;
+        margin-top: 3rem;
+    }
+    .add-input {
+        font-size: 14px;
+    }
+    .categeory-select {
+        font-size: 12px;
+    }
+    .add-item-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .add-input,
+    .categeory-select {
+        margin-bottom: 10px;
+    }
+    .add-icon {
+        margin-left: 0;
+        align-self: center;
+    }
+}
